@@ -1,0 +1,7 @@
+import numpy as np
+
+N, M, P = map(int, input().split())
+arr1 = np.array([input().split() for i in range(N)], int)
+arr2 = np.array([input().split() for i in range(M)], int)
+
+print(np.concatenate((arr1, arr2), axis=0))
